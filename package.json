@@ -1,0 +1,24 @@
+{
+  "name": "2021-github-actions-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codegrid/2021-github-actions-6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codegrid/2021-github-actions-6/issues"
+  },
+  "homepage": "https://github.com/codegrid/2021-github-actions-6#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  }
+}

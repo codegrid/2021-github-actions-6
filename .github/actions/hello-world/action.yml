@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: '挨拶・GitHub情報・時間をログ出力する'
+inputs:
+  who-to-greet: # 入力項目のid
+    description: '挨拶する対象' # 入力項目の説明
+    required: false # 入力項目が必須か否か
+    default: 'World' # デフォルト値
+outputs:
+  time: # 出力項目のid
+    description: '挨拶をした時間'
+runs:
+  using: 'node12'
+  main: 'index.js'

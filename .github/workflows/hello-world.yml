@@ -1,0 +1,19 @@
+name: 挨拶やその他の情報を出力
+on:
+  push:
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: 挨拶やその他の情報を出力する
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v2
+      - name: npmインストール
+        run: npm ci
+      - name: hello-worldアクションを実行
+        uses: ./.github/actions/hello-world
+        id: hello
+        with:
+          who-to-greet: 'CodeGrid'
+      - name: hello-worldが出力する時間を確認
+        run: echo "実行された時間：${{ steps.hello.outputs.time }}"
