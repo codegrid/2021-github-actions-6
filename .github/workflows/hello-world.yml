@@ -1,6 +1,12 @@
 name: 挨拶やその他の情報を出力
 on:
   push:
+  workflow_dispatch:
+    inputs:
+      who-to-greet: # 入力項目のid
+        description: '挨拶する対象' # 入力項目の説明
+        required: false # 入力項目が必須か否か
+        default: 'World' # デフォルト値
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
