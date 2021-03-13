@@ -1,0 +1,15 @@
+name: 'リリース用プルリクエストの自動作成'
+description: 'リリース用のプルリクエストを作成する'
+inputs:
+  base:
+    description: "プルリクエストの送り先のブランチ名を指定"
+    required: true
+  head:
+    description: "プルリクエストの送り元となるブランチ名を指定"
+    required: true
+  token:
+    description: 'GitHubを操作するのに必要なトークン'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
